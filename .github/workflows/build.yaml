@@ -38,23 +38,6 @@ jobs:
           file: ./Dockerfile.prod
           build-args: |
             REACT_APP_ENV=production
-            REACT_APP_BASE_URL=https://journoo.me
-            REACT_APP_BACKEND_URL=https://journoo.me/api
-  # deploy:
-  #   name: Deploy the container to Digital Ocean
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v2
-  #     - name: multiple command
-  #       uses: appleboy/ssh-action@v1.0.3
-  #       with:
-  #         host: ${{ secrets.DIGITAL_OCEAN_HOST }}
-  #         username: ${{ secrets.DIGITAL_OCEAN_USERNAME }}
-  #         key: ${{ secrets.MY_SSH_PRIVATE_KEY }}
-  #         script: |
-  #           cd ~/mechatronic-platform
-  #           git pull
-  #           docker-compose -f docker/compose.prod.yaml pull
-  #           docker-compose -f docker/compose.prod.yaml up -d --build web
+            REACT_APP_BASE_URL=https://example.com
+            REACT_APP_BACKEND_URL=https://example.com/api
+
