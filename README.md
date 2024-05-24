@@ -1,4 +1,7 @@
+
 # Getting Started with Create React App
+## Customize
+Replace `project.com` and `Project` with your project name and domain
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
